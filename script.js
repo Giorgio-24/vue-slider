@@ -14,9 +14,9 @@ var root = new Vue(
 
         },
         methods: {
-            showImage(i) {
+            showIfActive(i) {
                 if (i === this.imageIndex) {
-                    return 'd-inline-block';
+                    return 'active';
                 } else {
                     return 'd-none';
                 }
