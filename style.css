@@ -2,6 +2,6 @@ body{
     max-height: 100vh;
 }
 
-.nonono{
-    display: none;
+.pointer{
+    cursor: pointer;
 }

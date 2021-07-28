@@ -18,16 +18,16 @@
         <div class="container">
             <div class="row d-flex">
                 <div class="col-3 justify-content-center d-flex align-items-center">
-                    <i class="fas fa-arrow-left fa-4x"></i>
+                    <i class="fas fa-arrow-left fa-4x pointer" @click="decreaseImageIndex"></i>
                 </div>
                 <div class="col-6 d-flex">
                     <figure>
-                        <img v-for="(url, index) in images" :class="showImage(index)" :src="images[index]"
-                            alt="landscape-image" class="img-fluid">
+                        <img v-for="(url, index) in images" :class="showImage(index)" :src="url" alt="landscape-image"
+                            class="img-fluid">
                     </figure>
                 </div>
                 <div class="col-3 justify-content-center d-flex align-items-center">
-                    <i class="fas fa-arrow-right fa-4x"></i>
+                    <i class="fas fa-arrow-right fa-4x pointer" @click="increaseImageIndex"></i>
                 </div>
             </div>
         </div>
