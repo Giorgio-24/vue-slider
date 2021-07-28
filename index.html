@@ -16,16 +16,17 @@
 <body>
     <div id="root">
         <div class="container">
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-3 text-center">
+            <div class="row d-flex">
+                <div class="col-3 justify-content-center d-flex align-items-center">
                     <i class="fas fa-arrow-left fa-4x"></i>
                 </div>
-                <div class="col-6">
+                <div class="col-6 d-flex">
                     <figure>
-
+                        <img v-for="(url, index) in images" :class="showImage(index)" :src="images[index]"
+                            alt="landscape-image" class="img-fluid">
                     </figure>
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-3 justify-content-center d-flex align-items-center">
                     <i class="fas fa-arrow-right fa-4x"></i>
                 </div>
             </div>
