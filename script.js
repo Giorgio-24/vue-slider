@@ -18,7 +18,7 @@ var root = new Vue(
                 if (i === this.imageIndex) {
                     return 'active';
                 } else {
-                    return 'd-none';
+                    return '';
                 }
 
             },

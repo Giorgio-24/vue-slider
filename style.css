@@ -2,8 +2,16 @@ div.container:first-of-type{
     height: 100vh;
 }
 
+.display-none{
+    display: none;
+}
+
 img.active{
     display: inline-block;
+}
+
+div.dot.active{
+    background-color: #1e90ff;
 }
 
 .pointer{

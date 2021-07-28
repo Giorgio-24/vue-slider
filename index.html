@@ -23,10 +23,10 @@
                 <div class="col-8 d-flex ">
                     <figure class="d-flex align-items-center position-relative">
                         <img v-for="(url, index) in images" :class="showIfActive(index)" :src="url"
-                            alt="landscape-image" class="img-fluid">
+                            alt="landscape-image" class="img-fluid display-none">
                     </figure>
                     <div class="dot-navigator position-absolute">
-                        <div v-for="(dot, index) in images" class="dot"></div>
+                        <div v-for="(dot, index) in images" :class="showIfActive(index)" class="dot"></div>
                     </div>
                 </div>
                 <div class="col-2 justify-content-center d-flex align-items-center">
