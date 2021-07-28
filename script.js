@@ -36,6 +36,7 @@ var root = new Vue(
                     this.imageIndex = this.images.length - 1;
                 };
             },
+            myDots(i) { this.imageIndex = i; },
         }
     }
 );
