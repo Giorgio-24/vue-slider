@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-8 d-flex ">
                     <figure class="d-flex align-items-center position-relative">
-                        <img v-for="(url, index) in images" :class="showIfActive(index)" :src="url"
+                        <img v-for="(url, index) in images" :class="showIfActive(index)" :class=":myFunzione" :src="url"
                             alt="landscape-image" class="img-fluid display-none">
                     </figure>
                     <div class="dot-navigator position-absolute">
@@ -32,6 +32,10 @@
                 </div>
                 <div class="col-2 justify-content-center d-flex align-items-center">
                     <i class="fas fa-arrow-right fa-4x pointer" @click="increaseImageIndex"></i>
+                </div>
+                <div id="sliding-buttons" class="position-relative">
+                    <button @click="startAutoSliding">Start auto-sliding</button>
+                    <button @click="stopAutoSliding">Stop auto-sliding</button>
                 </div>
             </div>
         </div>

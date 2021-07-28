@@ -29,6 +29,12 @@ div.dot-navigator{
     transform: translatex(-50%);
 }
 
+#sliding-buttons{
+    left: 50%;
+    transform: translatex(-50%);
+
+}
+
 div.dot{
     display: inline-block;
     background-color: #fff;
