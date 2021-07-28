@@ -53,7 +53,7 @@ var root = new Vue(
                             this.autoSliding()
                         })
                     }
-                }, 5000);
+                }, 6000);
             },
 
             /*             myFunzione() {//!DA VEDERE DOVE METTERLA

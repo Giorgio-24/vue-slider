@@ -1,21 +1,40 @@
-div.container:first-of-type{
-    height: 100vh;
-}
-
+/*= GENERALS */ 
 .display-none{
     display: none;
 }
 
+.pointer{
+    cursor: pointer;
+}
+/*? ACTIVE STATUS */
 img.active{
     display: inline-block;
+    opacity: 1;
+    animation: vanish 6s linear;
+}
+
+@keyframes vanish {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.4;
+    }
+    20%{
+        opacity: 0.8;
+    }
+    30%{
+        opacity:1
+    }
 }
 
 div.dot.active{
     background-color: #1e90ff;
 }
 
-.pointer{
-    cursor: pointer;
+/*= BODY */ 
+div.container:first-of-type{
+    height: 100vh;
 }
 
 div.dot-navigator{
