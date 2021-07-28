@@ -23,20 +23,18 @@ var root = new Vue(
 
             },
             increaseImageIndex() {
-                this.imageIndex = this.imageIndex + 1;
-                /*                 if (this.imageIndex < this.images.length - 1) {
-                                    this.imagesIndex++;
-                                } else {
-                                    this.imageIndex = 0;
-                                }; */
+                if (this.imageIndex < this.images.length - 1) {
+                    this.imageIndex = this.imageIndex + 1;
+                } else {
+                    this.imageIndex = 0;
+                };
             },
             decreaseImageIndex() {
-                this.imageIndex = this.imageIndex - 1;
-                /*                 if (this.imageIndex > 0) {
-                                    this.imagesIndex--;
-                                } else {
-                                    this.imageIndex = this.images.length - 1;
-                                }; */
+                if (this.imageIndex > 0) {
+                    this.imageIndex = this.imageIndex - 1;
+                } else {
+                    this.imageIndex = this.images.length - 1;
+                };
             },
         }
     }

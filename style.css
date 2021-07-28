@@ -1,5 +1,5 @@
-body{
-    max-height: 100vh;
+div.container > div:first-child.row{
+    height: 100vh;
 }
 
 .pointer{
